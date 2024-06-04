@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Trong Nguyen, UET, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Users\TrongNguyen\Documents\Keil_v5\core\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\TrongNguyen\Desktop\eCompass\eCompass.uvprojx
+Project File Date:  06/05/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\TrongNguyen\Documents\Keil_v5\core\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'Target 1'
+compiling main.c...
+main.c(104): warning:  #111-D: statement is unreachable
+    return 1;
+main.c(150): warning:  #61-D: integer operation result is out of range
+    GPIOC->CRH &= ~((0xF<<24)|(0xF)<<28);
+main.c(262): warning:  #61-D: integer operation result is out of range
+  	GPIOB->CRL |= ((0xB << 24) | (0xB << 28)); // Set Mode, CNF PB6 PB7
+main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=10976 RO-data=640 RW-data=96 ZI-data=1632  
+".\Objects\eCompass.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/TrongNguyen/Documents/Keil_v5/pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/TrongNguyen/Documents/Keil_v5/pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  C:/Users/TrongNguyen/Documents/Keil_v5/pack/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Keil::Device:GPIO@1.3
+      Include file:  RTE_Driver/GPIO_STM32F10x.h
+      Source file:   RTE_Driver/GPIO_STM32F10x.c
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
